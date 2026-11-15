@@ -20,7 +20,7 @@ h1 span{color:var(--pink)}
 .big .d{font-size:18px;opacity:.95;line-height:1.35}
 .big.p1{background:linear-gradient(135deg,#E11E7F,#ff6aa9)}
 .big.p4{background:linear-gradient(135deg,#6b4bff,#a88bff)}
-.big.full{background:linear-gradient(135deg,#0f9d8a,#3fd0b6)}
+.big.full{background:linear-gradient(135deg,#E11E7F,#ff6aa9)}
 .big.one{flex:0 0 auto;min-height:110px;padding:0 48px}
 .big.one .n{font-size:32px}
 .ghost{background:#fff;border:2px solid #e3dbe0;border-radius:999px;padding:10px 22px;font:inherit;font-size:17px;color:#444}
