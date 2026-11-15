@@ -11,13 +11,16 @@ h1{margin:4px 0 0;font-size:clamp(28px,5vw,48px);font-weight:800}
 h1 span{color:var(--pink)}
 .sub{font-size:clamp(17px,2.4vw,22px);color:#555;margin:0}
 .tip{color:var(--grey);font-size:15px}
-.choices{display:flex;gap:24px;flex-wrap:wrap;justify-content:center;width:100%;max-width:900px;margin-top:8px}
-.big{flex:1 1 280px;min-height:200px;border:0;border-radius:32px;color:#fff;font:inherit;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;box-shadow:0 10px 0 rgba(0,0,0,.15);transition:transform .08s}
+.choices{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;width:100%;max-width:1100px;margin-top:8px}
+@media (orientation:portrait){.choices{grid-template-columns:1fr 1fr;max-width:760px}.big.full{grid-column:1 / -1;min-height:150px}}
+.big{min-height:200px;padding:16px 12px;border:0;border-radius:32px;color:#fff;font:inherit;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;box-shadow:0 10px 0 rgba(0,0,0,.15);transition:transform .08s}
 .big:active{transform:translateY(6px);box-shadow:0 4px 0 rgba(0,0,0,.15)}
-.big .n{font-size:clamp(40px,6vw,64px);font-weight:900}
+.big .n{font-size:clamp(34px,5vw,56px);font-weight:900;line-height:1.05}
+.big .n small{font-size:.55em;font-weight:800;opacity:.9}
 .big .d{font-size:18px;opacity:.95;line-height:1.35}
 .big.p1{background:linear-gradient(135deg,#E11E7F,#ff6aa9)}
 .big.p4{background:linear-gradient(135deg,#6b4bff,#a88bff)}
+.big.full{background:linear-gradient(135deg,#0f9d8a,#3fd0b6)}
 .big.one{flex:0 0 auto;min-height:110px;padding:0 48px}
 .big.one .n{font-size:32px}
 .ghost{background:#fff;border:2px solid #e3dbe0;border-radius:999px;padding:10px 22px;font:inherit;font-size:17px;color:#444}
@@ -58,3 +61,4 @@ h1 span{color:var(--pink)}
 .fbHead{margin-top:14px;font-size:14px;text-transform:uppercase;letter-spacing:.05em;color:var(--grey);font-weight:700}
 .fb{font-size:17px;color:#444;margin:6px 0 0;line-height:1.45}
 @media (orientation:landscape) and (max-height:820px){.orb{width:80px;height:80px}.tNum{font-size:48px}.big{min-height:170px}}
+@media (orientation:landscape){.big .n{font-size:clamp(30px,3.6vw,50px)}.big.full .n{font-size:clamp(26px,3vw,42px)}}
